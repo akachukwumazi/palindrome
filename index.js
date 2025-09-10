@@ -1,6 +1,7 @@
 const palindrome = document.getElementById("palindrome");
 const  checkBtn = document.getElementById("checkBtn");
 const  outPut = document.getElementById("outPut");
+const  reverseOutPut = document.getElementById("reverseOutPut");
 let result = "";
 
 function correctWrong(){
@@ -54,6 +55,8 @@ checkBtn.onclick = () =>{
         outPut.textContent = "wrong try again";
         correctWrong();
     };
+    reverseOutPut.textContent = `your reversed input is: ${firstCheck} and your input is: ${result}`;
+    
 
     outPut.style.display = "block"
 
